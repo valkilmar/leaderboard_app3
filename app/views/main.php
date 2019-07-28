@@ -20,8 +20,8 @@
             </div>
             <div class="leaderboard-wrapper mt-4"><?php echo $content; ?></div>
             <div class="text-center mt-3">
-                <p>Almost 100% powered by <strong class="text-danger">Valentin Stoyanov</strong>. 33% left unfinished unfortunately.</br>
-            App1: 100% | App2: 0% | App3: 100%</p>
+                <p>Almost 100% powered by <strong class="text-danger">Valentin Stoyanov</strong>. 16.5% left unfinished unfortunately.</br>
+            App1: 100% | App2: 50% | App3: 100%</p>
             </div>
         </div>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>

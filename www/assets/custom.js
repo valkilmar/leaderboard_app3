@@ -40,6 +40,8 @@ var managerAppClass = function() {
                     }
                     
                     if ($this.hasClass('api-action-start')) {
+                        
+                        // This piece of code should be removed once Pusher is ready
                         self.timeoutId = setTimeout(function() {
                             $this.trigger('click');
                           }, 2000);
