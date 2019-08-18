@@ -24,7 +24,7 @@ var managerAppClass = function() {
     self.TIME_STATUS_HIDE_ANIM = 2000;
     self.TIME_REMOVE_PLAYER_ANIM = 500;
 
-    
+
     // -----------------------------------------------------------------
     // Initialize the app object
     // -----------------------------------------------------------------

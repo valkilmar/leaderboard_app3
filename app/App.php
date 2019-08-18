@@ -104,10 +104,10 @@ class App {
         $result = PollingService::getLeaderboard(1, $limit);
 
         $players = (isset($result['leaderboard'])) ? $result['leaderboard'] : [];
+        $response = '';
 
         if (!empty($players)) {
             $position = 1;
-            $response = '';
 
             foreach ($players as $playerName => $playerScore) {
                 $response .= $playerTemplate->render(true, [
