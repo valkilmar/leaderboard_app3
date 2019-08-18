@@ -313,7 +313,8 @@ var managerAppClass = function() {
     // -----------------------------------------------------------------
     self.initConnection = function() {
         
-        self.socket = io(self.URL_PUSHER_SERVICE);
+        //self.socket = io(self.URL_PUSHER_SERVICE);
+        self.socket = io(self.URL_PUSHER_SERVICE, {secure: true});
 
         self.socket.on('leaderboard', function(message) {
             console.log('Push message received', message);
