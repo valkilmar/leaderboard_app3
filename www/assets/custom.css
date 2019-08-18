@@ -26,8 +26,34 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .item-player {
+    position: relative;
     border-radius: 0;
     background: #efefef;
     margin-bottom: 1px;
     text-align: right;
+}
+
+.item-position {
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 30px;
+    font-size: 1.2em;
+    font-family: 'Prata', serif;
+}
+
+.app-status-wrapper {
+    height: 2em;
+    text-overflow: hidden;
+    white-space: nowrap;
+}
+
+.glow {
+    background: #fff;
+    opacity: 0.75;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
 }

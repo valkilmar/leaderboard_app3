@@ -23,13 +23,17 @@ class Template {
     }
     
     
-    public function render($returnResult = false)
+    public function render($returnResult = false, $params = null)
     {
-        extract($this->params);
+        if ($params !== null) {
+            extract($params);
+        } else {
+            extract($this->params);
+        }
         
         ob_start();
         
-        require_once $this->path;
+        require $this->path;
         
         $result = ob_get_clean();
         
