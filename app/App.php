@@ -60,7 +60,7 @@ class App {
      */
     public function renderMain($limit, $page = 1, $returnResult = false)
     {
-        $playerTemplate = new Template('playerItem', [
+        $playerTemplate = new Template('player_item', [
             'name' => '',
             'score' => 0,
             'position' => 0,
@@ -95,7 +95,7 @@ class App {
      */
     public function renderLeaderboard($limit, $page = 1, $returnResult = false)
     {
-        $playerTemplate = new Template('playerItem', [
+        $playerTemplate = new Template('player_item', [
             'name' => '',
             'score' => '',
             'position' => 0,
