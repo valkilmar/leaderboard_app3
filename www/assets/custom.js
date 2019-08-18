@@ -11,12 +11,8 @@ var managerAppClass = function() {
 
     // Collect initial data from the dom
     var $appData = $('#app-data').first();
-    
-    self.TIME_STATUS_VISIBLE = 2000;
-    self.TIME_STATUS_HIDE_ANIM = 2000;
-    self.TIME_REMOVE_PLAYER_ANIM = 500;
 
-    self.URL_PUSHER = $appData.data('urlPusher');
+    self.URL_PUSHER_SERVICE = $appData.data('urlPusherService');
     self.URL_LEADERBOARD = $appData.data('urlLeaderboard');
     self.CLASS_ITEM_PLAYER = 'item-player';
 
@@ -24,6 +20,11 @@ var managerAppClass = function() {
     self.limit = parseInt($appData.data('limit'));
     self.total = parseInt($appData.data('total'));
 
+    self.TIME_STATUS_VISIBLE = 2000;
+    self.TIME_STATUS_HIDE_ANIM = 2000;
+    self.TIME_REMOVE_PLAYER_ANIM = 500;
+
+    
     // -----------------------------------------------------------------
     // Initialize the app object
     // -----------------------------------------------------------------
@@ -312,7 +313,7 @@ var managerAppClass = function() {
     // -----------------------------------------------------------------
     self.initConnection = function() {
         
-        self.socket = io(self.URL_PUSHER);
+        self.socket = io(self.URL_PUSHER_SERVICE);
 
         self.socket.on('leaderboard', function(message) {
             console.log('Push message received', message);

@@ -77,7 +77,7 @@ class App {
             'urlStop' => '/' . self::ACTION_STOP,
             'urlReset' => '/' . self::ACTION_RESET,
             'urlLeaderboard' => '/' . self::ACTION_LEADERBOARD,
-            'urlPusher' => Utils::getConfig('url_pusher'),
+            'urlPusherService' => Utils::getConfig('url_pusher_service'),
             'timestamp' => time()
         ]);
 

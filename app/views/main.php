@@ -50,7 +50,7 @@
         </div>
 
         <div id="app-data" style="display: none"
-            data-url-pusher="<?php echo ($urlPusher); ?>"
+            data-url-pusher-service="<?php echo ($urlPusherService); ?>"
             data-url-leaderboard="<?php echo ($urlLeaderboard); ?>"
             data-total="<?php echo ($total); ?>"
             data-page="<?php echo ($page); ?>"
