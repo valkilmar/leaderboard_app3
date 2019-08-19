@@ -314,9 +314,9 @@ var managerAppClass = function() {
     self.initConnection = function() {
         
         //self.socket = io(self.URL_PUSHER_SERVICE);
-        self.socket = io(self.URL_PUSHER_SERVICE, {
+        self.socket = io(self.URL_PUSHER_SERVICE.replace(/^http/, 'ws'), {
             secure: true,
-            transports: ['websocket', 'polling', 'flashsocket']
+            transports: ['websocket', 'polling']
         });
 
         self.socket.on('leaderboard', function(message) {
